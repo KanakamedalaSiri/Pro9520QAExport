@@ -1,0 +1,24 @@
+{
+    "AS_Button_a577c9c8016a46c991eff0fa69414150": {
+        "id": "AS_Button_a577c9c8016a46c991eff0fa69414150",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form2",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a6432efcba48408ba9c7b577706d2330"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "ADD_SNIPPET_ba7b1b8622f94cfba625835ce634194e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "Form2.TextField0d0449ba7620b43.text = \"enter the world!\";\n//Form2.TextField0d0449ba7620b43.setFocus(true);\nForm2.forceLayout();",
+            "parentId": null
+        }]
+    }
+}

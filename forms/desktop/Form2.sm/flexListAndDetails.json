@@ -1,0 +1,333 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s601f26d715044a1a46e13c8b036bde5",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "flexListView",
+        "flexDetails"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flexListAndDetails",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e581c05cabbc47e28c5e4e867db17805",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "Form2",
+    "pf": "Form2",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "90%"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "5%"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "vizProps": {
+        "dynamicPropertiesConfig": {
+            "dataCollectionId": "responseList",
+            "flexKUID": "d023bdaf5012485f9762e157e61147a2",
+            "operationName": "getLocations",
+            "rowTemplateKUID": "d3d04dd9071c44b8bd952fa83f8659e2",
+            "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+            "serviceName": "Locations",
+            "serviceType": "integration",
+            "viewType": "List and Detail form ui",
+            "widgetsConfig": {
+                "detailsViewConfig": {
+                    "Address": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "ed084d27b9f0450da4dc6fd5cfaf7d8d",
+                            "name": {
+                                "kuid": "ba19ba30c66f409688397d4d480e43ad",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "i8d7f5e4e21a49dcae58a81aa3b2d151",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "Address"
+                            },
+                            "generate": true,
+                            "index": 3
+                        }
+                    },
+                    "Company": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "fa41e3a64b90421f8815961bb02a2299",
+                            "name": {
+                                "kuid": "j396986d839b4eb4ad5f79515047a462",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "h5a41bc3733846718d74afcc8420a54b",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "Company"
+                            },
+                            "generate": true,
+                            "index": 1
+                        }
+                    },
+                    "Latitude": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "c8f6a5653a694afaa4168ea6255b50dc",
+                            "name": {
+                                "kuid": "a5b186ac4f06457a9dbb85260dc7ac85",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "ffd3618b3ecf4a21be1a709e216c1180",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "Latitude"
+                            },
+                            "generate": true,
+                            "index": 4
+                        }
+                    },
+                    "LocationID": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "c6e952d2175a489b9f83d9579a9eed4e",
+                            "name": {
+                                "kuid": "aee9d21bb77643e0bea99ab1ea330c13",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "g8c5ef5875c442ec91b904e894045827",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "LocationID"
+                            },
+                            "generate": true,
+                            "index": 0
+                        }
+                    },
+                    "Longitude": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "c57bbe1bce3b4bdc8d1e4f5c44b1f1f2",
+                            "name": {
+                                "kuid": "ef90cce9bc3c4cb6ad7b670e9d468dce",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "bedb9d61b43046b298c03a0cb5a7c293",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "Longitude"
+                            },
+                            "generate": true,
+                            "index": 5
+                        }
+                    },
+                    "OfficeType": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "c5b24a1690c1478095ce2aaf9ecb2124",
+                            "name": {
+                                "kuid": "b7f5cc67401748189780f11282fc0b55",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "d7a8769f1d4e4c2683ee821202c378da",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "OfficeType"
+                            },
+                            "generate": true,
+                            "index": 6
+                        }
+                    },
+                    "Phone": {
+                        "dataType": "string",
+                        "layoutConfig": {
+                            "kuid": "c29e60cbaf8f4f85b55eaaf0b6d39f92",
+                            "name": {
+                                "kuid": "f133b6ea4c814c7a966bbb0356ffb4f7",
+                                "wType": "Label"
+                            },
+                            "value": {
+                                "kuid": "icd82edad51e47b79d1b6a627ffd4749",
+                                "wType": "Label"
+                            },
+                            "wType": "FlexContainer"
+                        },
+                        "properties": {
+                            "displayName": {
+                                "key": "text",
+                                "value": "Phone"
+                            },
+                            "generate": true,
+                            "index": 2
+                        }
+                    }
+                },
+                "listViewConfig": {
+                    "Address": {
+                        "dataType": "string",
+                        "kuid": "f0705b0fd9d34225ba9f77927356aebb",
+                        "properties": {
+                            "generate": true,
+                            "index": 3
+                        },
+                        "wType": "Label"
+                    },
+                    "Company": {
+                        "dataType": "string",
+                        "kuid": "ecdaf22d277c45868ac63469a0699adb",
+                        "properties": {
+                            "generate": true,
+                            "index": 1
+                        },
+                        "wType": "Label"
+                    },
+                    "Latitude": {
+                        "dataType": "string",
+                        "kuid": "dbcf92c6bcd8487699e91f1ba8ce0a49",
+                        "properties": {
+                            "generate": true,
+                            "index": 4
+                        },
+                        "wType": "Label"
+                    },
+                    "LocationID": {
+                        "dataType": "string",
+                        "kuid": "f8ef3868025f4ca2bd06cca0c428bb78",
+                        "properties": {
+                            "generate": true,
+                            "index": 0
+                        },
+                        "wType": "Label"
+                    },
+                    "Longitude": {
+                        "dataType": "string",
+                        "kuid": "f562623171a14dcb9fef357dca086764",
+                        "properties": {
+                            "generate": true,
+                            "index": 5
+                        },
+                        "wType": "Label"
+                    },
+                    "OfficeType": {
+                        "dataType": "string",
+                        "kuid": "c491612092de4edea936b8085dbb13fb",
+                        "properties": {
+                            "generate": true,
+                            "index": 6
+                        },
+                        "wType": "Label"
+                    },
+                    "Phone": {
+                        "dataType": "string",
+                        "kuid": "ce6a4107e7ff492d99d3afb8f99e708f",
+                        "properties": {
+                            "generate": true,
+                            "index": 2
+                        },
+                        "wType": "Label"
+                    }
+                }
+            }
+        }
+    },
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

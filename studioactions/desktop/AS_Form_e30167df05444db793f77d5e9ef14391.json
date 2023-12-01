@@ -1,0 +1,621 @@
+{
+    "AS_Form_e30167df05444db793f77d5e9ef14391": {
+        "id": "AS_Form_e30167df05444db793f77d5e9ef14391",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form2",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c99e35f034504c8bb01c86ba28861f13"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_f34bdf3323064c7890f7aec7ddda77b3",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_ASYNC_SERVICE_c574f3425bed4800b9863d7ce23b5953",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Locations",
+                "type": "integration",
+                "operationname": "getLocations",
+                "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_b598021076cc4d5babf68a5506527cb1",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_ASYNC_SERVICE_c574f3425bed4800b9863d7ce23b5953",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "IF_CONDITION_abb8a61186284645ad49dcafe5dbd8d9",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "getLocations.opstatus",
+                "leftValueType": "value",
+                "operator": "===",
+                "rightValue": "0",
+                "rightValueType": "value"
+            }],
+            "parentId": "INVOKE_ASYNC_SERVICE_c574f3425bed4800b9863d7ce23b5953",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "ADD_MAPPING_c432c18dfd0e46eda2a4e366fa506dbd",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_c7b1836354644ed99f131cde9917775c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "responseList",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "seggetLocations",
+                        "widgetPath": "this.view.seggetLocations",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "Form2",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a6db63c8e27d49158d8089974206e477": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a6db63c8e27d49158d8089974206e477",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "LocationID",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"LocationID\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLocationID",
+                        "widgetPath": "this.view.lblLocationID",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "f8ef3868025f4ca2bd06cca0c428bb78",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b9452c0db13f4c2fa9af8dff8dd52a19": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b9452c0db13f4c2fa9af8dff8dd52a19",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Company",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Company\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblCompany",
+                        "widgetPath": "this.view.lblCompany",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "ecdaf22d277c45868ac63469a0699adb",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h54303a7fab040e9af22c8710d225e52": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h54303a7fab040e9af22c8710d225e52",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Phone",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Phone\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblPhone",
+                        "widgetPath": "this.view.lblPhone",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "ce6a4107e7ff492d99d3afb8f99e708f",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fee99fc151f747849202b4ad14cd2cb0": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fee99fc151f747849202b4ad14cd2cb0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Address",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Address\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblAddress",
+                        "widgetPath": "this.view.lblAddress",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "f0705b0fd9d34225ba9f77927356aebb",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_dc4c2034d1b44744ad613ec449bc97ad": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_dc4c2034d1b44744ad613ec449bc97ad",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Latitude",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Latitude\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLatitude",
+                        "widgetPath": "this.view.lblLatitude",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "dbcf92c6bcd8487699e91f1ba8ce0a49",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ee864a5d230e4714bca07b11442a1c08": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ee864a5d230e4714bca07b11442a1c08",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Longitude",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Longitude\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLongitude",
+                        "widgetPath": "this.view.lblLongitude",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "f562623171a14dcb9fef357dca086764",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fe1cd9e35f9c4224aec267de60de4e5a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fe1cd9e35f9c4224aec267de60de4e5a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "OfficeType",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"OfficeType\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblOfficeType",
+                        "widgetPath": "this.view.lblOfficeType",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "Form2",
+                        "parentMappingId": "ME_Mapping_c7b1836354644ed99f131cde9917775c",
+                        "segmentId": "seggetLocations",
+                        "segmentKUID": "j0ba0f2bc40e49eebada33187ffd2049",
+                        "widgetKUID": "c491612092de4edea936b8085dbb13fb",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b6ae186c360e4edfaa11a59c271af69f": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b6ae186c360e4edfaa11a59c271af69f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "LocationID",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"LocationID\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLocationIDValue",
+                        "widgetPath": "this.view.lblLocationIDValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "g8c5ef5875c442ec91b904e894045827",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_abfc92f319984a48955882dd843eea86": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_abfc92f319984a48955882dd843eea86",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Company",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Company\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblCompanyValue",
+                        "widgetPath": "this.view.lblCompanyValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "h5a41bc3733846718d74afcc8420a54b",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_daac9a8b51954cfa946ea9eade158680": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_daac9a8b51954cfa946ea9eade158680",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Phone",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Phone\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblPhoneValue",
+                        "widgetPath": "this.view.lblPhoneValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "icd82edad51e47b79d1b6a627ffd4749",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bb75e75cf1cb4963b9660d5fd08c1df3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_bb75e75cf1cb4963b9660d5fd08c1df3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Address",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Address\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblAddressValue",
+                        "widgetPath": "this.view.lblAddressValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "i8d7f5e4e21a49dcae58a81aa3b2d151",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c32a6ca3b3884ab19b33d902601ce7a9": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c32a6ca3b3884ab19b33d902601ce7a9",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Latitude",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Latitude\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLatitudeValue",
+                        "widgetPath": "this.view.lblLatitudeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "ffd3618b3ecf4a21be1a709e216c1180",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c0959b1d455143b7a330cddf24dca61a": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c0959b1d455143b7a330cddf24dca61a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Longitude",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"Longitude\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLongitudeValue",
+                        "widgetPath": "this.view.lblLongitudeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "bedb9d61b43046b298c03a0cb5a7c293",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ab7c7c1a3f8b42e58d5943f183a0dc50": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ab7c7c1a3f8b42e58d5943f183a0dc50",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "OfficeType",
+                        "dataType": "string",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"OfficeType\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Locations",
+                            "type": "integration",
+                            "operationname": "getLocations",
+                            "serviceid": "92b92416-6229-456f-bc5b-b583361af2bc"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblOfficeTypeValue",
+                        "widgetPath": "this.view.lblOfficeTypeValue",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Form2",
+                        "widgetKUID": "d7a8769f1d4e4c2683ee821202c378da",
+                        "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_c7b1836354644ed99f131cde9917775c", "ME_Mapping_a6db63c8e27d49158d8089974206e477", "ME_Mapping_b9452c0db13f4c2fa9af8dff8dd52a19", "ME_Mapping_h54303a7fab040e9af22c8710d225e52", "ME_Mapping_fee99fc151f747849202b4ad14cd2cb0", "ME_Mapping_dc4c2034d1b44744ad613ec449bc97ad", "ME_Mapping_ee864a5d230e4714bca07b11442a1c08", "ME_Mapping_fe1cd9e35f9c4224aec267de60de4e5a", "ME_Mapping_b6ae186c360e4edfaa11a59c271af69f", "ME_Mapping_abfc92f319984a48955882dd843eea86", "ME_Mapping_daac9a8b51954cfa946ea9eade158680", "ME_Mapping_bb75e75cf1cb4963b9660d5fd08c1df3", "ME_Mapping_c32a6ca3b3884ab19b33d902601ce7a9", "ME_Mapping_c0959b1d455143b7a330cddf24dca61a", "ME_Mapping_ab7c7c1a3f8b42e58d5943f183a0dc50"],
+            "parentId": "IF_CONDITION_abb8a61186284645ad49dcafe5dbd8d9",
+            "enableMappingEditor": true
+        }, {
+            "id": "ELSE_CONDITION_ff9a5c03592a424c894737b6c5575dab",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_ASYNC_SERVICE_c574f3425bed4800b9863d7ce23b5953",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_f791a570998142b0964a1c49de960d1d",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "ELSE_CONDITION_ff9a5c03592a424c894737b6c5575dab",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

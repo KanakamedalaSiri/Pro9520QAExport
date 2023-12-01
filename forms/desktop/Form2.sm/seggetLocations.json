@@ -1,0 +1,534 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        },
+        {
+            "lblAddress": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Address"
+            },
+            "lblCompany": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Company"
+            },
+            "lblLatitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Latitude"
+            },
+            "lblLocationID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LocationID"
+            },
+            "lblLongitude": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Longitude"
+            },
+            "lblOfficeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "OfficeType"
+            },
+            "lblPhone": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phone"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "responseList",
+        "eventAssociationMeta": {
+            "actionTemplates": [
+                {
+                    "action_tag": "list_on_row_click",
+                    "event": "onRowClick",
+                    "template": {
+                        "addMappingConfig": {
+                            "id": "ADD_MAPPING_b8cbf3f3c123480987572e19062c48fa",
+                            "mappings": {},
+                            "mappingsOrder": [],
+                            "parentId": "IF_CONDITION_a8cb4798257747d6aec7299dd8d7a64a",
+                            "type": "ADD_MAPPING"
+                        },
+                        "checkCurrentBreakPoint": {
+                            "conditions": [
+                                {
+                                    "leftValue": "",
+                                    "leftValueType": "expression"
+                                }
+                            ],
+                            "id": "IF_CONDITION_a880f00f7a6843f2907771681bc7d477",
+                            "parentId": "IF_CONDITION_a8cb4798257747d6aec7299dd8d7a64a",
+                            "type": "IF_CONDITION"
+                        },
+                        "checkIsListUiVisible": {
+                            "conditions": [
+                                {
+                                    "leftItemKUID": null,
+                                    "leftValue": "",
+                                    "leftValueType": "widgetprop",
+                                    "leftWidgetKUID": null,
+                                    "operator": "===",
+                                    "rightValue": "",
+                                    "rightValueType": "value"
+                                }
+                            ],
+                            "id": "IF_CONDITION_bc7a8d0625be49a88843a0c2cc11ff67",
+                            "parentId": "IF_CONDITION_a880f00f7a6843f2907771681bc7d477",
+                            "type": "IF_CONDITION"
+                        },
+                        "codeSnippetAction": {
+                            "callbackType": null,
+                            "codeSnippet": "",
+                            "id": "ADD_SNIPPET_jc9dd168912f4350820684a7b043fddf",
+                            "parentId": "IF_CONDITION_bc7a8d0625be49a88843a0c2cc11ff67",
+                            "type": "ADD_SNIPPET"
+                        },
+                        "dismissLoadingIndicator": {
+                            "callbackType": "Callback",
+                            "id": "LOADING_INDICATOR_cb003301ed4f430fa0e79a30591e4ee3",
+                            "parentId": "INVOKE_ASYNC_SERVICE_e5cb12133f8146c7bffb1f10b2a5c50c",
+                            "selectedOption": "dismiss",
+                            "type": "LOADING_INDICATOR"
+                        },
+                        "failureAlert": {
+                            "alertMessage": "Fetch failed! Please try again later.",
+                            "alertType": "constants.ALERT_TYPE_INFO",
+                            "id": "SHOW_ALERT_eff55f18668f42af96b103109dc012b6",
+                            "parentId": "ELSE_CONDITION_ab3ac1dc06d3474787be3cf1cf2c9ac1",
+                            "type": "SHOW_ALERT"
+                        },
+                        "failureCondition": {
+                            "callbackType": "Callback",
+                            "id": "ELSE_CONDITION_ab3ac1dc06d3474787be3cf1cf2c9ac1",
+                            "parentId": "INVOKE_ASYNC_SERVICE_e5cb12133f8146c7bffb1f10b2a5c50c",
+                            "type": "ELSE_CONDITION"
+                        },
+                        "mobileBreakpoints": [
+                            640
+                        ],
+                        "serviceCall": {
+                            "id": "INVOKE_ASYNC_SERVICE_e5cb12133f8146c7bffb1f10b2a5c50c",
+                            "mappings": {},
+                            "mappingsOrder": [],
+                            "serviceconfig": {
+                                "operationname": "",
+                                "serviceid": "",
+                                "servicename": "",
+                                "type": ""
+                            },
+                            "type": "INVOKE_ASYNC_SERVICE"
+                        },
+                        "setBackBtnProperty": {
+                            "id": "SET_WIDGET_PROPERTY_ba8456753da84ae78b55152d7479b8f5",
+                            "itemKUID": null,
+                            "itemType": "FORM",
+                            "parentId": "IF_CONDITION_bc7a8d0625be49a88843a0c2cc11ff67",
+                            "propertyName": null,
+                            "propertyValue": null,
+                            "type": "SET_WIDGET_PROPERTY",
+                            "widgetKUID": null
+                        },
+                        "setListUIproperty": {
+                            "id": "SET_WIDGET_PROPERTY_j5b25ef294034a9a917814724649c50e",
+                            "itemKUID": null,
+                            "itemType": "FORM",
+                            "parentId": "IF_CONDITION_bc7a8d0625be49a88843a0c2cc11ff67",
+                            "propertyName": null,
+                            "propertyValue": null,
+                            "type": "SET_WIDGET_PROPERTY",
+                            "widgetKUID": null
+                        },
+                        "showLoadingIndicator": {
+                            "id": "LOADING_INDICATOR_b41544bd35a948b29f8ccd49b1ead7ee",
+                            "selectedOption": "show",
+                            "type": "LOADING_INDICATOR"
+                        },
+                        "successCondition": {
+                            "callbackType": "Callback",
+                            "conditions": [
+                                {
+                                    "leftValue": "",
+                                    "leftValueType": "value",
+                                    "operator": "===",
+                                    "rightValue": "0",
+                                    "rightValueType": "value"
+                                }
+                            ],
+                            "id": "IF_CONDITION_a8cb4798257747d6aec7299dd8d7a64a",
+                            "parentId": "INVOKE_ASYNC_SERVICE_e5cb12133f8146c7bffb1f10b2a5c50c",
+                            "type": "IF_CONDITION"
+                        }
+                    }
+                }
+            ],
+            "skipMapping": true
+        },
+        "widgetPropertyName": "rowData"
+    },
+    "alternaterowskin": "s813560fcc4d4f058346c07a3ab39dd0",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "d3d04dd9071c44b8bd952fa83f8659e2",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "seggetLocations",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j0ba0f2bc40e49eebada33187ffd2049",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "parent": "flexListView",
+    "pf": "Form2",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "d3d04dd9071c44b8bd952fa83f8659e2",
+    "rowcounter": 9,
+    "rowfocusskin": "s912181658864bd893974dffca454687",
+    "rowskin": "s997d6aa23b84d44955cd6b58b0315ef",
+    "rowtemplate": "FBoxgetLocations",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s3cc9fd651904ded9e0694954febb207",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblAddress": "lblAddress",
+        "lblCompany": "lblCompany",
+        "lblLatitude": "lblLatitude",
+        "lblLocationID": "lblLocationID",
+        "lblLongitude": "lblLongitude",
+        "lblOfficeType": "lblOfficeType",
+        "lblPhone": "lblPhone"
+    }
+}

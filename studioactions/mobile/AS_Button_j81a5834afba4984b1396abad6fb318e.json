@@ -1,0 +1,24 @@
+{
+    "AS_Button_j81a5834afba4984b1396abad6fb318e": {
+        "id": "AS_Button_j81a5834afba4984b1396abad6fb318e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form2",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a6432efcba48408ba9c7b577706d2330"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "ADD_SNIPPET_b0b87e34ad9448168f5ce81b1f645231",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"Sanity 9.5.20 QA for MOBILE\");",
+            "parentId": null
+        }]
+    }
+}

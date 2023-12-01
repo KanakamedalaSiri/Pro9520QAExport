@@ -1,0 +1,83 @@
+{
+    "AS_Form_bc63e101ab374907bd78cc1df68ca29a": {
+        "id": "AS_Form_bc63e101ab374907bd78cc1df68ca29a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "Form2",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c99e35f034504c8bb01c86ba28861f13"
+        },
+        "language": "js",
+        "eventType": "onBreakpointChange",
+        "actions": [{
+            "id": "IF_CONDITION_ffc4e70c8c964030a7b4682abdfc78ca",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "[640].indexOf(breakpoint)",
+                "leftValueType": "value",
+                "operator": "===",
+                "rightValue": -1,
+                "rightValueType": "value"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "IF_CONDITION_c5e836b18f7c4fa79060fb59ae85c2b6",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "this.view.flexListView.isVisible",
+                "leftValueType": "widgetprop",
+                "operator": "===",
+                "rightValue": "false",
+                "rightValueType": "value",
+                "leftItemKUID": "c99e35f034504c8bb01c86ba28861f13",
+                "leftWidgetKUID": "j88aceb9df024507bafa82e8fc01989d"
+            }],
+            "parentId": "IF_CONDITION_ffc4e70c8c964030a7b4682abdfc78ca",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__onBreakpointChange_d80f90cae55d404fafb9c8479ef71879",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form2",
+            "widgetId": "flexListView",
+            "propertyName": "isVisible",
+            "propertyValue": "true",
+            "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+            "widgetKUID": "j88aceb9df024507bafa82e8fc01989d",
+            "isSkinProperty": false,
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION_c5e836b18f7c4fa79060fb59ae85c2b6",
+            "widgetPath": "this.view.flexListView"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__onBreakpointChange_gbbae0f2544d49fbb405ef465d7e131b",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Form2",
+            "widgetId": "flexBack",
+            "propertyName": "isVisible",
+            "propertyValue": "false",
+            "itemKUID": "c99e35f034504c8bb01c86ba28861f13",
+            "widgetKUID": "e9282883872c404eaba0c0fd68a341c2",
+            "isSkinProperty": false,
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION_c5e836b18f7c4fa79060fb59ae85c2b6",
+            "widgetPath": "this.view.flexBack"
+        }, {
+            "id": "ADD_SNIPPET_onBreakpointChange_b20a2202dccf4b4e942a3da672feef79",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.forceLayout();",
+            "parentId": "IF_CONDITION_c5e836b18f7c4fa79060fb59ae85c2b6"
+        }]
+    }
+}
